@@ -2,7 +2,7 @@ import inquirer from "inquirer";
 const promptUser = async () => {
     const answer = await inquirer.prompt([
         {
-            name: "Firstname",
+            name: "Firstnumber",
             type: "number",
             message: "Enter first number : ",
         },
@@ -33,7 +33,7 @@ const promptUser = async () => {
                 return number1 / number2;
         }
     };
-    const result = operations(answer.Firstname, answer.Secondnumber, answer.operator);
+    const result = operations(answer.Firstnumber, answer.Secondnumber, answer.operator);
     console.log(` Result = ${result}`);
     ;
 };
