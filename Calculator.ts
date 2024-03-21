@@ -3,7 +3,7 @@ const promptUser = async () => {
 
 const answer = await inquirer.prompt([
         {
-          name: "Firstname",
+          name: "Firstnumber",
           type: "number",
           message: "Enter first number : ",
         },
@@ -43,7 +43,7 @@ const answer = await inquirer.prompt([
 
 
     const result = operations(
-      answer.Firstname,
+      answer.Firstnumber,
       answer.Secondnumber,
       answer.operator
     );
